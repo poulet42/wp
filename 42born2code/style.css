@@ -1,0 +1,253 @@
+/*
+Theme Name: 42borntocode
+Theme URI: http://42.fr/
+Author: Kcohen
+Author URI: https://intra.42.fr/user/kcohen
+Description: Theme 42borntocode
+Version: 1.0
+*/
+
+/* import stylesheets and hide from ie/mac \*/
+@import url("css/master.css");
+/* end import/hide */
+
+/***** General ********************/
+
+*
+{
+		box-sizing: border-box;
+}
+
+ul
+{
+	margin: 0;
+}
+
+ul>li
+{
+	list-style: none;
+}
+
+.btn, #jumbotron #searchsubmit{
+	color: white;
+	padding: 8px 10px;
+}
+
+a
+{
+	text-decoration: none;
+}
+h1, h2, h3, h4
+{
+	margin: 0;
+}
+/*************OVERRIDE CPRUNE**************/
+
+body{
+	background: #fafafa;
+}
+
+header
+{
+	padding: 0px 40px;
+	line-height: 60px;
+	height: 60px;
+	/*background-color: #ff0000;*/
+	background: rgba(255,255,255,0.3);
+	width: 100%;
+}
+
+header *
+{
+	display: inline;
+}
+
+header nav#menu{
+	position: relative;
+	/*fix menu (un peu crade)*/
+	line-height: normal;
+}
+
+nav#menu>a{
+	padding: 22px 0;
+}
+header nav#menu:hover #toggle_menu{
+	display: block;
+}
+
+header #toggle_menu{
+	display: none;
+	position: absolute;
+	background: #00ff00;
+	padding:10px;
+	left: 0px;
+	line-height: normal;
+}
+
+#toggle_menu a{
+
+}
+header #site-logo
+{
+	vertical-align: middle;
+}
+
+#right-header-nav
+{
+	float: right;
+	height: inherit;
+}
+
+#right-header-nav li
+{
+		margin: 0px 15px;
+}
+
+#right-header-nav a
+{
+	color: white;
+}
+
+#right-header-nav #publish_btn
+{
+		background: #16a085;
+}
+
+#jumbotron{
+	background:url('images/jumbobg.jpg');
+	background-position: 50% 50%;
+	background-size: cover;
+	width: 100%;
+	height: 444px;
+	padding-top: 60px;
+	text-align: center;
+}
+
+#jumbo_wrap{
+	margin: 60px auto;
+}
+
+#jumbo_wrap #hero_title h2, #jumbo_wrap #hero_title h3
+{
+	color: white;
+	line-height: normal;
+	font-weight: normal;
+	margin: 20px auto;
+}
+
+#jumbo_wrap #hero_title h2
+{
+	text-transform: uppercase;
+	font-size: 45px;
+	margin: 15px auto;
+}
+
+#hero_title #mode_btn
+{
+	font-size: 16px;
+	display: block;
+	width: 170px;
+	//padding: 15px;
+	margin: 60px auto;
+	text-transform: uppercase;
+	background: #26A65B;
+}
+#blocsearch
+{
+	font-size: 14px;
+	line-height: 80px;
+	height: 80px;
+	background: rgba(0,0,0,0.5);
+}
+
+#jumbotron #blocsearch input
+{
+	margin: 0 10px;
+	padding: 15px 10px;
+	border: none;
+}
+
+#jumbotron #searchbox{
+	width: 230px;
+}
+
+#jumbotron #searchsubmit
+{
+	width: 150px;
+	background:#e74c3c;
+}
+
+#preview{
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+#preview_wrap{
+	width:60%;
+	margin: 0 auto;
+}
+#preview h3
+{
+	font-size: 28px;
+	margin: 10px auto;
+}
+
+#preview #grille{
+	margin-top: 60px;
+	text-align: justify;
+}
+
+#preview #grille .bloc{
+	width: 31%;
+	height: 400px;
+	display: inline-block;
+	overflow: hidden;
+	line-height: 400px;
+}
+
+#grille::after{
+		content:'';
+		width: 31%;
+		height: 0;
+		display: inline-block;
+}
+
+#preview #grille .bloc_content{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-color: #ff0000;
+	margin: 0;
+}
+#bruxelles{
+	background-image: url('images/bruxelles.jpeg');
+}
+
+#london{
+	background-image: url('images/london.jpeg');
+}
+
+#lilles{
+	background-image: url('images/lilles.jpeg');
+}
+
+.bloc_content .caption{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+	color: white;
+}
+
+#footer{
+	background: #333;
+	padding: 20px;
+	color: white;
+	min-height: 200px;
+}
+
+#footer #menu-bottom{
+	width: 250px;
+	font-size: 11px;
+}
